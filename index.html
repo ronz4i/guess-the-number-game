@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-frame">
+
+        <header class="header">
+            <h1 class="title">GUESS THE NUMBER</h1>
+            <p class="below-title">Pick a number between 1 to 100</p>
+            <div class="header-line"></div>
+        </header>
+
+        <main class="main-main">
+
+            <section id="home-screen" class="active screen home-screen">
+                <div class="the-box home-box">CHOOSE A DIFFICULTY</div>
+                <div class="difficulty-options">
+                    <button class="but-diff" the-difficulty="easy" onclick="location.href='easy.html';">EASY</button>
+                    <button class="but-diff" the-difficulty="medium" onclick="location.href='medium.html';">MEDIUM</button>
+                    <button class="but-diff" the-difficulty="hard" onclick="location.href='hard.html';">HARD</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

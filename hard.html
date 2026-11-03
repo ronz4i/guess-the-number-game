@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="hard.css">
+</head>
+<body>
+    <div class="game-frame">
+
+        <header class="header">
+            <h1 class="title">GUESS THE NUMBER</h1>
+            <p class="below-title">Pick a number between 1 to 100</p>
+            <div class="header-line"></div>
+        </header>
+
+        <main class="main-main">
+
+            <section id="game-screen" class="screen game-screen">
+                <div class="info-top">
+                    <div id="mistake" class="the-box top-box">0 MISTAKE(S)</div>
+                    <div id="difficulty-box" class="the-box top-box flex-it">GAME DIFFICULTY - HARD</div>
+                    <button id="but-exit" class="the-box exit-box" onclick="location.href='index.html';">EXIT</button>
+                </div>
+            
+                <!-- status pag win or lose,at pag high or low -->
+                <div id="stats-text" class="stats-text"></div>
+
+                <!-- box ng number na huhulaan -->
+                <div id="number-box" class="number-box">?</div>
+
+                <form id="guess-form">
+                    <div class="input-fudgeebar">
+                        <input type="number" id="guess-input" min="1" max="100" value="0" /> 
+                    </div>
+                </form>
+
+                <button id="but-submit" class="bar-black">SUBMIT GUESS</button>
+                <button id="but-play-again" class="bar-red hidden">PLAY AGAIN</button>
+            </section>
+
+        </main>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
